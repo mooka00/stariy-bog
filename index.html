@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dota 2</title>
     <style>
+        main{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        html{
+            height: 100%;
+        }
         
         body{
-            margin: 0;
-            background: crimson;
-            color:darkolivegreen;
+            height: 100%;
+            background: white;
+            color:rgb(219, 45, 45);
             font-family: Times, serif;
+            display: flex;
+            flex-direction: column;
+
 
         }
         header{
-           background: cyan; 
-           color: bisque;
-           padding: 80px 40px;
+           background: rgb(28, 108, 255); 
+           color: rgb(212, 35, 212);
+           padding: 20px 80px;
+           
            display: flex;
            justify-content: space-between;
+           align-items: center;
+           
         }
         .logo{
-            font-size: 16px;
-            font-weight: 900;
+            font-size: 50px;
+            font-weight: 1000;
+            
         }
         nav{
             display: flex;
@@ -30,39 +46,46 @@
             flex-direction: row;
         }
         nav a {
-            color: rgb(30, 117, 6);
-            text-decoration: underline plum;
+            color: rgb(0, 0, 0);
+            
         }
         .card {
+            
             background: white;
             padding: 20px;
             display: flex;
+            justify-items: center;
             flex-direction: column;
+            align-content: center;
             
             align-items: center;
         }
         .avatar {
+            
             width: 500px;
             height: 500px;
             border-radius: 50%;
             background-image: url(png/pudge.webp);
             background-position: center;
             margin-bottom: 10px;
+            
         }
         .card h3 {
             margin: 0 0 10px;
         }
 
         .card p {
-            color: #b87bfa;
+            color: #ff0000;
         }
         footer {
-            margin-top: 40px;
-            padding: 30px 40px;
+            padding: 20px 40px;
+            
+            
             background: #222;
             color: white;
             display: flex;
             justify-content: space-between;
+            
         }
 
         .footer-links {
@@ -82,7 +105,7 @@
 <body>
 <header>
     <div class="logo">
-        DreamPuges
+        DP
     </div>
     <nav>
         <a href="hook.html">Hook Meat</a>
@@ -90,22 +113,21 @@
         <a href="hit.html">Meat Shield</a>
         <a href="ult.html">Dismember</a>
     </nav>
-
 </header>
 <main>
 
 
-    <div class="team">
-        <div class="card">
-            <div class="avatar"></div>
+    
+    <div class="card">
+        <div class="avatar"></div>
 
-            <h1>Pudge</h1>
+        <h1>Pudge</h1>
 
-            <p>
-                Butcher
-            </p>
-        </div>
+        <p>
+            Butcher
+        </p>
     </div>
+    
 
 </main>
 <footer>
